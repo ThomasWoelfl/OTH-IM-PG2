@@ -2,7 +2,7 @@ package uebung_12_3;
 
 import java.math.BigInteger;
 
-public class Primzahltest extends Thread {
+public class PrimeTest extends Thread {
 
 	BigInteger rest = new BigInteger("4");
 	BigInteger number = new BigInteger("2");
@@ -14,7 +14,7 @@ public class Primzahltest extends Thread {
 	int exponent = 0;
 	boolean isOdd = true;
 
-	public Primzahltest(int exponent) {
+	public PrimeTest(int exponent) {
 		this.exponent = exponent;
 		if ((this.exponent % 2) == 0) {
 			isOdd = false;

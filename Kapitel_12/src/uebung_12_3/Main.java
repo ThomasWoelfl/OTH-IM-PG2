@@ -8,19 +8,19 @@ public class Main {
 		int i = 3;
 
 		//Creating 8 new Thread. Every single one is dead, because we did not start it.
-		Primzahltest p1 = new Primzahltest(0);
-		Primzahltest p2 = new Primzahltest(0);
-		Primzahltest p3 = new Primzahltest(0);
-		Primzahltest p4 = new Primzahltest(0);
-		Primzahltest p5 = new Primzahltest(0);
-		Primzahltest p6 = new Primzahltest(0);
-		Primzahltest p7 = new Primzahltest(0);
-		Primzahltest p8 = new Primzahltest(0);
+		PrimeTest p1 = new PrimeTest(0);
+		PrimeTest p2 = new PrimeTest(0);
+		PrimeTest p3 = new PrimeTest(0);
+		PrimeTest p4 = new PrimeTest(0);
+		PrimeTest p5 = new PrimeTest(0);
+		PrimeTest p6 = new PrimeTest(0);
+		PrimeTest p7 = new PrimeTest(0);
+		PrimeTest p8 = new PrimeTest(0);
 
 		//If one of our threads has done its job, it dies. So if the thread is not alive anymore, we can create a new one with a new number to test.
 		while (true) {
 			if (!p1.isAlive()) {
-				p1 = new Primzahltest(i);
+				p1 = new PrimeTest(i);
 				p1.start();
 				i++;
 				if (stop(i, exponent)) {
@@ -28,7 +28,7 @@ public class Main {
 				}
 			}
 			if (!p2.isAlive()) {
-				p2 = new Primzahltest(i);
+				p2 = new PrimeTest(i);
 				p2.start();
 				i++;
 				if (stop(i, exponent)) {
@@ -36,7 +36,7 @@ public class Main {
 				}
 			}
 			if (!p3.isAlive()) {
-				p3 = new Primzahltest(i);
+				p3 = new PrimeTest(i);
 				p3.start();
 				i++;
 				if (stop(i, exponent)) {
@@ -44,7 +44,7 @@ public class Main {
 				}
 			}
 			if (!p4.isAlive()) {
-				p4 = new Primzahltest(i);
+				p4 = new PrimeTest(i);
 				p4.start();
 				i++;
 				if (stop(i, exponent)) {
@@ -52,7 +52,7 @@ public class Main {
 				}
 			}
 			if (!p5.isAlive()) {
-				p5 = new Primzahltest(i);
+				p5 = new PrimeTest(i);
 				p5.start();
 				i++;
 				if (stop(i, exponent)) {
@@ -60,7 +60,7 @@ public class Main {
 				}
 			}
 			if (!p6.isAlive()) {
-				p6 = new Primzahltest(i);
+				p6 = new PrimeTest(i);
 				p6.start();
 				i++;
 				if (stop(i, exponent)) {
@@ -68,7 +68,7 @@ public class Main {
 				}
 			}
 			if (!p7.isAlive()) {
-				p7 = new Primzahltest(i);
+				p7 = new PrimeTest(i);
 				p7.start();
 				i++;
 				if (stop(i, exponent)) {
@@ -76,7 +76,7 @@ public class Main {
 				}
 			}
 			if (!p8.isAlive()) {
-				p8 = new Primzahltest(i);
+				p8 = new PrimeTest(i);
 				p8.start();
 				i++;
 				if (stop(i, exponent)) {
