@@ -49,8 +49,8 @@ Charpter 11:
 - Added exercises as docx and pdf
 
 Charpter 12:
-- Replaced 12_1 completle by a new exercise
-- Added one new exercies: 12_2 
+- Shorted 12_1 and minor changes
+- Added two new exercieses: 12_2 and 12_3 
 - Added exercises as docx and pdf
 
 Charpter 13:
