@@ -1,9 +1,9 @@
-package uebung_12_1.variant_2;
+package uebung_12_2.variant_2;
 
-import uebung_12_1.base.ControlConstants;
-import uebung_12_1.base.MyItem;
-import uebung_12_1.base.StorageBase;
-import uebung_12_1.variant_2.SynchronizedStorage;
+import uebung_12_2.base.ControlConstants;
+import uebung_12_2.base.MyItem;
+import uebung_12_2.base.StorageBase;
+import uebung_12_2.variant_2.SynchronizedStorage;
 
 //This class is the implementation of the storage by using synchronized
 public class SynchronizedStorage extends StorageBase implements ControlConstants {

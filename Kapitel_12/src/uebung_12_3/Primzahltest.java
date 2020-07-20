@@ -1,4 +1,4 @@
-package uebung_12_2;
+package uebung_12_3;
 
 import java.math.BigInteger;
 

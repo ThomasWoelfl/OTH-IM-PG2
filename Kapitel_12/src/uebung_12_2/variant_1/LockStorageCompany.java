@@ -1,14 +1,13 @@
-package uebung_12_1.variant_2;
+package uebung_12_2.variant_1;
 
-import uebung_12_1.base.Collector;
-import uebung_12_1.base.Supplier;
-import uebung_12_1.variant_2.SynchronizedStorage;
+import uebung_12_2.base.Collector;
+import uebung_12_2.base.Supplier;
 
 //This class contains the main-method and starts all threads.
-public class SynchronizedStorageCompany {
+public class LockStorageCompany {
 
 	public static void main(String[] args) {
-		SynchronizedStorage storage = SynchronizedStorage.getInstance();
+		LockStorage storage = LockStorage.getInstance();
 		Thread s1, s2, s3;
 		Thread c1, c2, c3;
 

@@ -1,4 +1,4 @@
-package uebung_12_1.base;
+package uebung_12_2.base;
 
 import java.util.concurrent.TimeUnit;
 //This class represents a Collector.

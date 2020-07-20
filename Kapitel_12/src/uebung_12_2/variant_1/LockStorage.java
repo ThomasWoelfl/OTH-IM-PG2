@@ -1,12 +1,12 @@
-package uebung_12_1.variant_1;
+package uebung_12_2.variant_1;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import uebung_12_1.base.ControlConstants;
-import uebung_12_1.base.MyItem;
-import uebung_12_1.base.StorageBase;
+import uebung_12_2.base.ControlConstants;
+import uebung_12_2.base.MyItem;
+import uebung_12_2.base.StorageBase;
 
 //This class is the implementation of the storage by using locks
 public class LockStorage extends StorageBase implements ControlConstants {
