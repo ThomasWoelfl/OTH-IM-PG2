@@ -1,5 +1,6 @@
 bin
 Tutorium-PG2-Java-master
+apache-log4j-2.12.1-bin
 Test
 *.class
 .metadata
