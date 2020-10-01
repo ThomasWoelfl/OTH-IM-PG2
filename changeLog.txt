@@ -37,6 +37,7 @@ Charpter 8:
 Charpter 9:
 - Rewrote 3_9 because the implementation did not make sense
 - various changes
+- updated log4jar to newest version
 - Added exercises as docx and pdf
 
 Charpter 10:
