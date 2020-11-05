@@ -32,7 +32,7 @@ public class Roulette {
 			int random = getRandomNumber();
 			boolean playerWon = false;
 			if (choice.equals("r")) {
-				// Wenn gerade Zahl, dann rot
+				// if even the field is red
 				if (random % 2 == 0 && random != 0) {
 					System.out.println("   " + random + " - Rot gewinnt, Glueckwunsch");
 					playerMoney += bet * 2;
@@ -40,7 +40,7 @@ public class Roulette {
 				}
 			}
 			else if (choice.equals("s")) {
-				// Wenn ungerade Zahl, dann schwarz
+				// if uneven the field is black
 				if (random % 2 != 0 && random != 0) {
 					System.out.println("   " + random + " - Schwarz gewinnt, Glueckwunsch");
 					playerMoney += bet * 2;

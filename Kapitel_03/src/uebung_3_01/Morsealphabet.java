@@ -9,7 +9,7 @@ public class Morsealphabet {
 		Scanner sc = new Scanner(System.in);
 
 		// user input
-		System.out.println("Bitte geben Sie nacheinander fuenf 'Morsezeichen' ein und bestätigen jeweils mit Enter: ");
+		System.out.println("Bitte geben Sie nacheinander fuenf 'Morsezeichen' ein und bestaetigen jeweils mit Enter: ");
 		for (int i = 0; i < 5; i++) {
 			morseCode += sc.nextLine();
 		}
