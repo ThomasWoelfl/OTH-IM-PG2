@@ -1,7 +1,7 @@
 package uebung_5_1;
 
 public class Root {
-	private double depth = 4.5;
+	double depth = 4.5;
 
 	
 	public int deliverWater() {

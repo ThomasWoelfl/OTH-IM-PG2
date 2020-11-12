@@ -3,11 +3,11 @@ package uebung_5_1;
 import java.util.Arrays;
 
 public class FruitTree {
-	private double height = 10.0;
-	private int age = 5;
-	private int waterAmount = 30;
-	private Branch[] branches = new Branch[5];
-	private Root[] roots = new Root[10];
+	double height = 10.0;
+	int age = 5;
+	int waterAmount = 30;
+	Branch[] branches = new Branch[5];
+	Root[] roots = new Root[10];
 
 	public void initFruitTree() {
 		for (int i = 0; i < branches.length; i++) {
@@ -43,7 +43,7 @@ public class FruitTree {
 				branches[i].grow();
 			}
 			waterAmount -= 5;
-			System.out.printf("Alle Aeste sind um %f Meter gewachsen\n", 1.0);
+			System.out.printf("Alle Aeste sind um %.2f Meter gewachsen\n", 1.0);
 		}
 		else {
 			System.out.println("Nicht genuegend Wasser vorhanden");

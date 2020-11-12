@@ -1,7 +1,7 @@
 package uebung_5_1;
 
 public class Leaf {
-	private String color = "gruen";
+	String color = "gruen";
 	
 	
 	public void changeColor(String color) {

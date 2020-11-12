@@ -3,9 +3,9 @@ package uebung_5_1;
 import java.util.Arrays;
 
 public class Branch {
-	private double length = 10.0;
-	private Leaf[] leafs = new Leaf[5];
-	private Fruit[] fruits = new Fruit[5];
+	double length = 10.0;
+	Leaf[] leafs = new Leaf[5];
+	Fruit[] fruits = new Fruit[5];
 	
 	public void initBranch(double length) {
 		for(int i = 0; i < leafs.length; i++) {
