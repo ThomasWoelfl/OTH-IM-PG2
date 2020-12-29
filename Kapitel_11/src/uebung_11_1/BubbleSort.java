@@ -1,4 +1,4 @@
-package uebung_11_2;
+package uebung_11_1;
 
 public class BubbleSort {
 

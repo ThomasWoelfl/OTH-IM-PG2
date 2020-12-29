@@ -32,6 +32,7 @@ Charpter 7:
 
 Charpter 8:
 - Minor changes, shorted code
+- Added execise 8_4 (moved from charpter 11)
 - Added exercises as docx and pdf
 
 Charpter 9:
@@ -46,6 +47,7 @@ Charpter 10:
 - Added exercises as docx and pdf
 
 Charpter 11:
+- Moved 11_1 to charpter 8
 - Added two new exercieses: 11_2 and 11_3 
 - Added exercises as docx and pdf
 

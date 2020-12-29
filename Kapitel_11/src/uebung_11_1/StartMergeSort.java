@@ -1,27 +1,27 @@
-package uebung_11_2;
+package uebung_11_1;
 
 import java.util.Random;
 
-public class StartBubbleSort {
+public class StartMergeSort {
 
 	public static void main(String[] args) {
-		int count = 100000;
+		int count = 100;
 		Random random = new Random();
 		int numbers[] = new int[count];
 
 		generateRandomNumbers(numbers, count, random);
-//		printArray(numbers);
+		// printArray(numbers);
 		System.out.println("Sortieren von " + numbers.length + " Zahlen");
 
-		BubbleSort bubbleSort = new BubbleSort();
+		MergeSort mergeSort = new MergeSort(numbers);
 
 		// Time measurement how long it takes to sort the array
 		double time = System.currentTimeMillis();
-		bubbleSort.bubbleSort(numbers);
+		numbers = mergeSort.sort();
 		time = System.currentTimeMillis() - time;
 		time = time / 1000;
 
-//		printArray(numbers);
+		// printArray(numbers);
 		System.out.println("Das Sortieren hat " + time + " Sekunden gedauert");
 
 	}
