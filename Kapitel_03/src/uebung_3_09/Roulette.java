@@ -6,6 +6,7 @@ public class Roulette {
 	public static void main(String[] args) {
 		// init game
 		Scanner sc = new Scanner(System.in);
+		int blackFields[] = {2, 4, 6, 8, 10, 11, 13, 15, 17, 19, 20, 22, 24, 26, 29, 31, 33, 35};
 		System.out.println("Willkommen beim Roulette");
 		int playerMoney = 1000;
 
@@ -33,7 +34,7 @@ public class Roulette {
 			boolean playerWon = false;
 			if (choice.equals("r")) {
 				// if even the field is red
-				if (random % 2 == 0 && random != 0) {
+				if (random != 0 && !isBlackField(random, blackFields)) {
 					System.out.println("   " + random + " - Rot gewinnt, Glueckwunsch");
 					playerMoney += bet * 2;
 					playerWon = true;
@@ -41,7 +42,7 @@ public class Roulette {
 			}
 			else if (choice.equals("s")) {
 				// if uneven the field is black
-				if (random % 2 != 0 && random != 0) {
+				if (random != 0 && isBlackField(random, blackFields)) {
 					System.out.println("   " + random + " - Schwarz gewinnt, Glueckwunsch");
 					playerMoney += bet * 2;
 					playerWon = true;
@@ -75,5 +76,14 @@ public class Roulette {
 		int max = 36;
 		int randomInteger = min + (int) (Math.random() * ((max - min) + 1));
 		return randomInteger;
+	}
+	
+	public static boolean isBlackField(int number, int[] blackFields) {
+		for(int i = 0; i < blackFields.length; i++) {
+			if(blackFields[i] == number) {
+				return true;
+			}
+		}
+		return false;
 	}
 }
