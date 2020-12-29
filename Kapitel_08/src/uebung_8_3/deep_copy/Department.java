@@ -1,8 +1,8 @@
 package uebung_8_3.deep_copy;
 
 public class Department implements Cloneable{
-	int id;
-	String name;
+	private int id;
+	private String name;
 	
 	public Department(int id, String name) {
 		this.id = id;

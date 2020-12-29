@@ -1,19 +1,19 @@
 package uebung_11_1;
 
 public class Job {
-	private String _name;
-	private float _salary;
+	private String name;
+	private float salary;
 
 	public Job(String name, float salary) {
-		this._name = name;
-		this._salary = salary;
+		this.name = name;
+		this.salary = salary;
 	}
 
 	public float getSalary() {
-		return this._salary;
+		return this.salary;
 	}
 
 	public String getName() {
-		return this._name;
+		return this.name;
 	}
 }

@@ -1,9 +1,9 @@
 package uebung_8_3.shallow_copy;
 
 public class Employee implements Cloneable{
-	int employeeId;
-	String employeeName;
-	Department department;
+	private int employeeId;
+	private String employeeName;
+	private Department department;
 
 	public Employee(int employeeId, String employeeName, Department department) {
 		this.employeeId = employeeId;
