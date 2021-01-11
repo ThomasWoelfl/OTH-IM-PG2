@@ -12,8 +12,11 @@ public class MainProgramm {
 		Scanner sc = new Scanner(System.in);
 
 		while (true) {
-			System.out.print("Geben Sie die Temperatur eines kalten Getränkes ein: ");
+			System.out.print("Geben Sie die Temperatur eines kalten Getränkes ein oder exit um zu Beenden: ");
 			String input = sc.nextLine();
+			if (input.equals("exit")) {
+				break;
+			}
 			Drink drink;
 
 			try {
@@ -34,7 +37,7 @@ public class MainProgramm {
 			catch (TooHotException e) {
 				System.out.println(e.getMessage());
 			}
-			catch (StorageEmpty e) {
+			catch (StorageEmptyException e) {
 				System.out.println(e.getMessage());
 			}
 		}

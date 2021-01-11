@@ -7,7 +7,7 @@ public class VirtualPub {
 		this.storage = storage;
 	}
 
-	public void serveCustomer(Person customer, Drink drink) throws TooColdException, TooHotException, StorageEmpty {
+	public void serveCustomer(Person customer, Drink drink) throws TooColdException, TooHotException, StorageEmptyException {
 
 		if (storage >= 1) {
 			// drink has been served
@@ -19,7 +19,7 @@ public class VirtualPub {
 		}
 		else {
 			// The storage is empty
-			throw new StorageEmpty("Lager leer!");
+			throw new StorageEmptyException("Lager leer!");
 		}
 	}
 }
