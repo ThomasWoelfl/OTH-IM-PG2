@@ -38,7 +38,7 @@ public class Car extends Vehicle {
 			return false;
 		}
 
-		if (!(obj instanceof Car)) {
+		if(this.getClass() != obj.getClass()) {
 			return false;
 		}
 

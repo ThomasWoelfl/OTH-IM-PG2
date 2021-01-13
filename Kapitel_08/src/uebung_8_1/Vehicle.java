@@ -59,8 +59,8 @@ public abstract class Vehicle {
 		if (obj == null) {
 			return false;
 		}
-
-		if (!(obj instanceof Vehicle)) {
+		
+		if(this.getClass() != obj.getClass()) {
 			return false;
 		}
 
