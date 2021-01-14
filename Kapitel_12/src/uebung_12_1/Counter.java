@@ -1,4 +1,4 @@
-package uebung_12_1.variant_1;
+package uebung_12_1;
 
 public class Counter {
 	private int count;

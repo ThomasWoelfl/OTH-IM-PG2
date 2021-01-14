@@ -2,6 +2,8 @@ package uebung_12_1.variant_1;
 
 import java.util.concurrent.TimeUnit;
 
+import uebung_12_1.Counter;
+
 public class CounterThread_sync extends Thread {
 	private Counter counter;
 

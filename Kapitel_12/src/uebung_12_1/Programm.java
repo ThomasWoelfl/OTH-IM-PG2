@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Programm {
 	public static void variante1() {
-		uebung_12_1.variant_1.Counter counter = new uebung_12_1.variant_1.Counter();
+		Counter counter = new Counter();
 		for (int i = 0; i < 100; i++) {
 			new uebung_12_1.variant_1.CounterThread_sync(counter).start();
 		}
