@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		int maxExponent = 86243;
 
-		int currentExponent = 86242;
+		int currentExponent = 3;
 
 		// Creating an array with the size of the available processors
 		PrimeTest primeTests[] = new PrimeTest[Runtime.getRuntime().availableProcessors()];
