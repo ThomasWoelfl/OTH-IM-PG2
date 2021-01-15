@@ -3,7 +3,7 @@ package uebung_12_3;
 public class Main {
 
 	public static void main(String[] args) {
-		int maxExponent = 86243;
+		int maxExponent = 4253;
 
 		int currentExponent = 3;
 
