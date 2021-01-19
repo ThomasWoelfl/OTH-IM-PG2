@@ -1,6 +1,7 @@
 package uebung_5_3;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ShoppingCart {
@@ -36,9 +37,10 @@ public class ShoppingCart {
     }
 
     public boolean remove(int articleNumber) {
-        for (Article article : this.articles) {
-            if (article.getArticleNumber() == articleNumber) {
-                this.articles.remove(article);
+    	Iterator<Article> iterator = this.articles.iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next().getArticleNumber() == articleNumber) {
+                iterator.remove();
                 return true;
             }
         }

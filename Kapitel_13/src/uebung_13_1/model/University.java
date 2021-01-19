@@ -1,6 +1,7 @@
 package uebung_13_1.model;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
@@ -148,9 +149,10 @@ public class University {
 	}
 	
 	public void removeStudent(int id, Console console) {
-		for (int i = 0; i < students.size(); i++) {
-			if (students.get(i).getId() == id) {
-				students.remove(i);
+		Iterator<Student> iterator = this.students.iterator();
+		while (iterator.hasNext()) {
+			if (iterator.next().getId() == id) {
+				iterator.remove();
 				console.printLine("Student removed");
 			}
 		}
