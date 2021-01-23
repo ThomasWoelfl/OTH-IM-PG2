@@ -26,13 +26,13 @@ public class Person implements Comparable<Person> {
 		}
 		else {
 			// this earns as much as other
-			if (this.getSize() < other.getSize()) {
+			if (this.getSize() > other.getSize()) {
 				// this size is smaller than others
-				return 1;
-			}
-			else if (this.getSize() > other.getSize()) {
-				// this size is bigger than others
 				return -1;
+			}
+			else if (this.getSize() < other.getSize()) {
+				// this size is bigger than others
+				return 1;
 			}
 			else {
 				return 0;
