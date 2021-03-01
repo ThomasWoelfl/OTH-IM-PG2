@@ -16,9 +16,10 @@ Charpter 4:
 - Added exercises as docx and pdf
 
 Charpter 5:
-- Complete Rewrote of 5_1
-- fixed Problems in 5_2
-- Major changes in 5_3
+- Complete Rewrote of 5_3
+- fixed Problems in 5_4
+- Major changes in 5_5
+- Added two new exercises
 - Added exercises as docx and pdf
 
 Charpter 6:
