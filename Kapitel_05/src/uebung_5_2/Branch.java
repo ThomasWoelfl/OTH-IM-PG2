@@ -7,9 +7,10 @@ public class Branch {
 	Leaf[] leafs = new Leaf[5];
 	Fruit[] fruits = new Fruit[5];
 	
-	public void initBranch(double length) {
+	public Branch(double length) {
+		this.length = length;
 		for(int i = 0; i < leafs.length; i++) {
-			leafs[i] = new Leaf();
+			leafs[i] = new Leaf("gruen");
 		}
 		
 		for(int i = 0; i < fruits.length; i++) {

@@ -1,8 +1,11 @@
 package uebung_5_2;
 
 public class Leaf {
-	String color = "gruen";
+	String color;
 	
+	public Leaf(String color) {
+		this.color = color;
+	}
 	
 	public void changeColor(String color) {
 		this.color = color;

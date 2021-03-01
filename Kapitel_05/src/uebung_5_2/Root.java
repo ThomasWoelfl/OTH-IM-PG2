@@ -1,8 +1,11 @@
 package uebung_5_2;
 
 public class Root {
-	double depth = 4.5;
-
+	double depth;
+	
+	public Root(double depth) {
+		this.depth = depth;
+	}
 	
 	public int deliverWater() {
 		return 1;

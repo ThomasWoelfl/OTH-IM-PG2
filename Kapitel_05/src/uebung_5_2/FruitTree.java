@@ -3,27 +3,28 @@ package uebung_5_2;
 import java.util.Arrays;
 
 public class FruitTree {
-	double height = 10.0;
-	int age = 5;
-	int waterAmount = 30;
+	double height;
+	int age;
+	int waterAmount;
 	Branch[] branches = new Branch[5];
-	Root[] roots = new Root[10];
+	Root[] roots = new Root[5];
 
-	public void initFruitTree() {
+	public FruitTree(double height, int age, int waterAmount) {
+		this.height = height;
+		this.age = age;
+		this.waterAmount = waterAmount;
 		for (int i = 0; i < branches.length; i++) {
-			Branch newBranch = new Branch();
-			newBranch.initBranch(60.0);
+			Branch newBranch = new Branch(60);
 			branches[i] = newBranch;
 		}
 
 		for (int i = 0; i < roots.length; i++) {
-			roots[i] = new Root();
+			roots[i] = new Root(4.5);
 		}
 	}
 
 	public static void main(String[] args) {
-		FruitTree fruitTree = new FruitTree();
-		fruitTree.initFruitTree();
+		FruitTree fruitTree = new FruitTree(10.0, 5, 30);
 		fruitTree.growBranches();
 		fruitTree.ripeFruits();
 		fruitTree.changeLeafColor("gelb");
@@ -64,7 +65,7 @@ public class FruitTree {
 			System.out.println("Nicht genuegend Wasser vorhanden");
 		}
 	}
-	
+
 	public void changeLeafColor(String color) {
 		if (waterAmount >= 5) {
 			for (int i = 0; i < branches.length; i++) {
@@ -79,11 +80,15 @@ public class FruitTree {
 			System.out.println("Nicht genuegend Wasser vorhanden");
 		}
 	}
-	
+
 	public void printTree() {
-		System.out.printf("Dieser Baum ist %f Meter hoch, %d Jahre alt, %d Wasserreserven und folgende Bestandteile:\n", height, age, waterAmount);
-		System.out.println(Arrays.toString(branches));
-		System.out.println(Arrays.toString(roots));
+		System.out.printf("Dieser Baum ist %.2f Meter hoch, %d Jahre alt, %d Wasserreserven und folgende Bestandteile:\n", height, age, waterAmount);
+		for(int i = 0; i < branches.length; i++) {
+			System.out.println(branches[i]);
+		}
+		for(int i = 0; i < roots.length; i++) {
+			System.out.println(roots[i]);
+		}
 	}
 
 	public double getHeight() {
